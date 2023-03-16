@@ -36,7 +36,7 @@ st.write(
 
 ##################################
 
-	df= pd.read_csv("./tabela.csv")
+	df= pd.read_csv("tabela.csv")
 	vale=df.loc[[0]]
 	petr4=df.loc[[1]]
 	itub4=df.loc[[2]]
