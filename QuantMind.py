@@ -11,17 +11,17 @@ from streamlit_extras.metric_cards import style_metric_cards
 
 ######################
 
-st.set_page_config(layout="wide", page_title='QuantMind', page_icon='./assets/favicon.ico',)
+st.set_page_config(layout="wide", page_title='QuantMind', page_icon='favicon.ico',)
 
-st.image("./assets/logo.png", width=150)
+st.image("logo.png", width=150)
 
 with open("Style.css") as f:
 	st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html = True)
 
-#st.markdown('<style>' + open('..main/Style.css').read() + '</style>', unsafe_allow_html=True)
+#st.markdown('<style>' + open('Style.css').read() + '</style>', unsafe_allow_html=True)
 
 
-df= pd.read_csv("./tab/tabela.csv")
+df= pd.read_csv("tabela.csv")
 vale=df.loc[[0]]
 petr4=df.loc[[1]]
 itub4=df.loc[[2]]
